@@ -1,4 +1,5 @@
 var arr = [1,7,3,5,2,5,1];
+var arr1 = ["a","bh","bh","j","k","a"];
 
 
 let unique2 = (arr)=>{
@@ -13,12 +14,12 @@ let unique2 = (arr)=>{
 //console.log(newarr); //unique ele
 ////////////////////////////////////////////
 
-for(var i=0;i<arr.length;i++){
-	for(var j=i+1;j<arr.length;j++){
+for(var i=0;i<arr1.length;i++){
+	for(var j=i+1;j<arr1.length;j++){
 		
 		
-			if(arr[i]==arr[j]){
-				console.log(arr[i]+" is duplicate.");
+			if(arr1[i]==arr1[j]){
+				console.log(arr1[i]+" is duplicate.");
 			
 			}
 		
