@@ -6,15 +6,17 @@
 <body>
 
 <script>
-	var a = 123;
-	(function(){
-      //var a = 10; //create inner scope
-      a = 12; //it takes a as global
-      console.log("inner :"+a);  
+var a = "rahul";
 
-	})();
- console.log("outer :"+a);
+window.onerror = function(m,url,a){
+	console.log(m+" -- "+url+" -- "+a);
+	//m - message.
+	//url - url file
+	//a line number
+	return false;
+}
 
+console.log(a.sort());
 </script>
 </body>
 </html>
