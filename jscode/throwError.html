@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+ //using throw error.provides additionl info about error
+	function test(arr){
+		console.log(arr instanceof Array);
+		if(!(arr instanceof Array)){
+			console.log("throw error");
+			//throws error.
+			throw new Error("test(): only array is required");
+		}
+		return arr.sort();
+	}
+	// var arr = [5,9,1];
+	// console.log(test("rahul
+
+		// Using try catch.
+		//it prevent browser's default behavior.browser show message in catch block instead of error messge.
+	try{
+		function test2(arr1){
+
+			return arr1.sort();
+		}
+		console.log(test2(123));
+	}catch(error){
+		console.log(error.message);
+	}
+	finally{
+		console.log("finally i am executed");
+	}
+</script>
+</body>
+</html>

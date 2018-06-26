@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="go()">Go http</button>
+<button onclick="closeme()">close me</button>
+
+<script>
+	var x = history.length;
+  console.log(x);
+  function go() {
+  	/*Opens blank new window
+  	 window.open("","","width=200,height=100");*/
+    
+    /* create window with content
+  	 var win = window.open("","myWindow","width=200,height=100");
+     win.document.write("<p>This is 'myWindow'. I am 200px wide and 100px tall!</p>");*/
+
+     /*Replace the current window with a new window
+      var myWindow = window.open("", "_self");
+	  myWindow.document.write("<p>I replaced the current window.</p>");
+     */
+
+     /*open window with controls
+     window.open("https://www.w3schools.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");*/
+
+  /* open multiple windows
+     window.open("http://www.google.com/");
+     window.open("https://www.w3schools.com/");*/
+     /* close this by myWin1.close()
+     myWindow1 = window.open("", "myWindow", "width=200,height=100"); 
+    */
+ 
+ /* use name of window as mywin.name
+    var myWindow = window.open("", "MsgWindow", "width=200,height=100");
+myWindow.document.write("<p>This window's name is: " + myWindow.name + "</p>");*/
+
+/* write in both source wind and new window
+var myWindow = window.open("", "myWindow", "width=200,height=100");   // Opens a new window
+myWindow.document.write("<p>This is 'myWindow'</p>");   // Text in the new window
+myWindow.opener.document.write("<p>This is the source window!</p>");  // Text in the window that created the new window*/
+  }
+
+  function closeme() {
+    myWindow1.close();
+  }
+</script>
+</body>
+</html>

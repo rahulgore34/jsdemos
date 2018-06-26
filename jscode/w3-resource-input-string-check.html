@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3resources String Exercise</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+
+/*Exercise-7
+Capital first word from string
+function capitallizefirstLetter(str){
+	var splitstr = str.split(" ");
+	var newstr="";
+	splitstr.forEach(function(item){
+ 	 newstr = newstr+" "+item.charAt(0).toUpperCase()+""+item.substr(1);
+	});
+	return (newstr);
+}
+console.log(capitallizefirstLetter("sarita maruti diwate"));
+*/
+/*Exercise-6 Hide email id
+function hideEmail(email){
+	var originalemail = email;
+	var splittedEmail = originalemail.trim().split("@");
+	var part1 = splittedEmail[0].slice(0,5)+"...";
+	var part2 = splittedEmail[1];
+	return part1+"@"+part2;
+}
+
+console.log(hideEmail("saritadiwate21@gmail.com"));
+*/
+
+/*Exercise -5 abbreviated string
+console.log(abbrStr("rahul gore"));
+function abbrStr(str){
+   var abbrstrarr = str.trim().split(" ");
+  var abbrstrstr = abbrstrarr[0]+" "+abbrstrarr[1].charAt(0);
+  return abbrstrstr;
+}
+*/
+
+/*Exercise-4 extract specifiedno of words from string USING functon
+function extractWords1(str,charNums){
+
+return str.slice(0,charNums);
+}
+console.log(extractWords1("rahul gore",7));
+*/
+
+/*Exercise-4 extract specifiedno of words from string
+-withut functon
+function extractWords(str,charNums){
+   for(var i=0;i<charNums;i++){
+   	if(charNums<=str.length){
+   	console.log(str[i]);
+   }
+   }
+}
+extractWords("rahul",2);
+*/
+
+
+
+/*Exercise 3 - split string without function
+var str = "rahul baban gore";
+var arr = [];
+for(var i=0;i<str.length;i++){
+	if(str[i]!=" "){
+   arr.push(str[i]);
+}
+	
+}
+console.log(arr);
+*/
+
+/* Exercise 3 - split string
+  function spitString(str) {
+  	return str.trim().split(" ");
+  }
+ console.log(spitString("rahul baban gore"));
+*/
+
+
+   /* Exercise -2
+   CHecks if string is blanck or not.if yes theb return true
+   function chkBlankString(str) {
+    
+
+   	return str.length ===0;
+   }
+console.log(chkBlankString("r"));
+*/
+
+
+  /*Exercise - 1
+	function checkString(str) {
+        var isString = false;
+        if(typeof str =="string"){
+        	isString = true;
+        }
+        return isString;
+	}
+
+	console.log(checkString("rahul"));   true
+	console.log(checkString(123)); false*/
+</script>
+</body>
+</html>
