@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    const p = Promise.resolve('Hello');
+    const p1 = 10;
+    const p2 = fetch('https://jsonplaceholder.typicode.com/posts/1').then(res=>res.json());
+    
+    Promise.all([p,p1,p2]).then(values => console.log(values));
+    
+    
+    </script>
+</body>
+</html>
