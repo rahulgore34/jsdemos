@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Asynch Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    
+
+    <script>
+    const posts = [
+        {title:'Post one', body:'this is post one'},
+        {title:'Post two', body:'this is post two'},
+        {title:'Post three', body:'this is post three'},
+        {title:'Post fout', body:'this is post four'}
+        ];
+     
+    function getPosts() {
+        setTimeout(() => {
+            let output = '';
+            posts.forEach((post,index)=> {
+                output += `<li>${post.title}</li>`
+            });
+            document.body.innerHTML = output;
+        },1000);
+    }
+
+    function createPost(post,callback) {
+        setTimeout(()=>{
+         posts.push(post);
+         callback();
+        },2000);
+    } 
+    // getPosts();
+    // createPost({
+    //     title:'new post',
+    //     body:'this is new post'
+    // },getPosts);
+
+    async function init() {
+     await  createPost({
+        title:'new post',
+        body:'this is new post'
+    });
+    getPosts();
+    }
+    init();
+    </script>
+</body>
+</html>
